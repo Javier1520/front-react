@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-import { Twitter, Facebook, Youtube } from 'lucide-react'
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaYoutube,
+} from 'react-icons/fa6'
 import styles from './Footer.module.css'
 import type { FooterProps, FooterColumn, FooterLink } from './Footer.types'
 
@@ -142,13 +146,13 @@ const Footer: React.FC<FooterProps> = ({
           {/* Social Icons */}
           <div className={styles.socialIcons} aria-label="Social media links">
             <a href="https://twitter.com" className={styles.socialIcon} aria-label="Twitter" target="_blank" rel="noreferrer">
-              <Twitter size={18} />
+              <FaXTwitter size={18} />
             </a>
             <a href="https://facebook.com" className={styles.socialIcon} aria-label="Facebook" target="_blank" rel="noreferrer">
-              <Facebook size={18} />
+              <FaFacebookF size={18} />
             </a>
             <a href="https://youtube.com" className={styles.socialIcon} aria-label="YouTube" target="_blank" rel="noreferrer">
-              <Youtube size={18} />
+              <FaYoutube size={18} />
             </a>
           </div>
         </div>
