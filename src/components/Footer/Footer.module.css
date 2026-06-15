@@ -1,0 +1,263 @@
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 64px 0 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: 48px;
+  margin-bottom: 48px;
+  align-items: start;
+}
+
+.logoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logoIcon {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #6B5CE7, #8b6ef5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoText {
+  background: linear-gradient(135deg, #8b6ef5, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.column {}
+
+.columnTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.columnLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columnLink {
+  font-size: 14px;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.columnLink:hover {
+  color: #a78bfa;
+}
+
+.subscribeBlock {
+  min-width: 220px;
+}
+
+.subscribeTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.subscribeDesc {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribeInput {
+  flex: 1;
+  padding: 9px 14px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.subscribeInput::placeholder {
+  color: #475569;
+}
+
+.subscribeInput:focus {
+  border-color: #6B5CE7;
+}
+
+.subscribeBtn {
+  padding: 9px 18px;
+  background: #6B5CE7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.subscribeBtn:hover {
+  background: #5a4ad1;
+  transform: translateY(-1px);
+}
+
+.subscribeBtn:active {
+  transform: translateY(0);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin: 0;
+}
+
+.bottomSection {
+  padding: 20px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #475569;
+}
+
+.privacyLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.privacyLink {
+  font-size: 13px;
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.privacyLink:hover {
+  color: #a78bfa;
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.langSelect {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #94a3b8;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
+.langSelect option {
+  background: #1e293b;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: #64748b;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.socialIcon:hover {
+  color: #a78bfa;
+  background: rgba(107, 92, 231, 0.12);
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .navColumns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .subscribeForm {
+    flex-direction: column;
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .bottomRight {
+    flex-wrap: wrap;
+  }
+}
