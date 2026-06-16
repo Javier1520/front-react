@@ -1,5 +1,6 @@
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import styles from './Toaster.module.css'
 import type { ToastOptions } from 'react-toastify'
 
 export const ToasterProvider: React.FC = () => (
@@ -11,9 +12,19 @@ export const ToasterProvider: React.FC = () => (
     closeOnClick
     pauseOnHover
     theme="light"
-    toastClassName={() =>
-      'relative flex p-3 min-h-10 rounded-xl justify-between overflow-hidden cursor-pointer shadow-lg'
+    toastClassName={({ type } = {}) =>
+      [
+        styles.toast,
+        type === 'success' && styles.success,
+        type === 'error' && styles.error,
+        type === 'info' && styles.info,
+        type === 'warning' && styles.warning,
+      ]
+        .filter(Boolean)
+        .join(' ')
     }
+    className={styles.toastBody}
+    progressClassName={styles.progress}
   />
 )
 
