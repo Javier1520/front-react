@@ -1,0 +1,38 @@
+/* Toaster.module.css */
+
+.toast {
+  background: #1f2937 !important; /* dark gray */
+  color: #ffffff !important;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* message text inside toastify */
+.toastBody {
+  color: #ffffff !important;
+}
+
+/* progress bar */
+.progress {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* success / error overrides (optional but recommended) */
+.success {
+  background: #16a34a !important;
+}
+
+.error {
+  background: #dc2626 !important;
+}
+
+.info {
+  background: #2563eb !important;
+}
+
+.warning {
+  background: #d97706 !important;
+}
