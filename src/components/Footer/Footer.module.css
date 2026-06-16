@@ -238,13 +238,18 @@
 /* Mobile */
 @media (max-width: 599px) {
   .topSection {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    
+    justify-items: center;
     gap: 32px;
   }
 
   .navColumns {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    
     gap: 24px;
+  }
+
+  .column {
+    text-align: center;
   }
 
   .subscribeForm {
