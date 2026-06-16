@@ -24,7 +24,6 @@ const Table: React.FC<TableProps> = ({
         domLayout="normal"
         rowHeight={48}
         headerHeight={48}
-        theme="legacy"
       />
     </div>
   )
